@@ -345,17 +345,8 @@ Serve a generated chart image (PNG).
 
 ---
 
-## 📄 License
-
-This project is proprietary and confidential.  
-© 2026 **Infotact Solutions — AI Research & Development Wing**. All rights reserved.
-
----
-
 <div align="center">
 
-Built with ❤️ by **Infotact Solutions**
-
-*Confidential Document — Not for Distribution*
+Built with ❤️
 
 </div>
