@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: statbot-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - WORKING_DIR=/app/workspace
+      - CHARTS_DIR=/app/workspace/charts
+    volumes:
+      # Persist generated charts to host
+      - ./charts:/app/workspace/charts
+    # Security hardening
+    security_opt:
+      - no-new-privileges:true
+    read_only: false
+    mem_limit: 1g
+    cpu_quota: 100000
+    restart: unless-stopped
+
+  frontend:
+    image: node:20-alpine
+    container_name: statbot-frontend
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install && npm run dev -- --host"
+    environment:
+      - VITE_API_URL=http://backend:8000
+    depends_on:
+      - backend
+    restart: unless-stopped

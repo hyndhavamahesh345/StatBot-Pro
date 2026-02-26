@@ -1,0 +1,25 @@
+Month,Region,Product,Sales,Units,Marketing_Spend,Profit
+Jan,North,Widget A,12500,250,3200,4800
+Jan,South,Widget A,9800,196,2400,3500
+Jan,East,Widget B,15200,304,4100,6200
+Jan,West,Widget B,11300,226,3000,4400
+Feb,North,Widget A,13200,264,3500,5100
+Feb,South,Widget A,10500,210,2600,3900
+Feb,East,Widget B,16800,336,4500,6900
+Feb,West,Widget B,12100,242,3200,4700
+Mar,North,Widget A,14100,282,3700,5500
+Mar,South,Widget A,11200,224,2900,4200
+Mar,East,Widget B,18500,370,5000,7600
+Mar,West,Widget B,13400,268,3600,5200
+Apr,North,Widget A,15800,316,4200,6100
+Apr,South,Widget A,12600,252,3300,4900
+Apr,East,Widget B,19200,384,5200,7900
+Apr,West,Widget B,14200,284,3800,5500
+May,North,Widget A,17200,344,4600,6700
+May,South,Widget A,13900,278,3700,5400
+May,East,Widget B,21000,420,5700,8600
+May,West,Widget B,15600,312,4200,6100
+Jun,North,Widget A,16800,336,4500,6500
+Jun,South,Widget A,14500,290,3900,5600
+Jun,East,Widget B,22400,448,6100,9200
+Jun,West,Widget B,16900,338,4600,6600
